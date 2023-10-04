@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BrandExample from './components/navbar';
-import Financeiro from './components/financeiro';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
