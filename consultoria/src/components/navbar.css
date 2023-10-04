@@ -1,0 +1,18 @@
+.transparent-navbar {
+    background-color: rgba(0, 128, 0, 1) 0%, rgba(0, 128, 0, 1) 50%, rgba(0, 128, 0, 1) 100%; 
+    color: white;
+    backdrop-filter: blur(10px); /* Aplica um desfoque ao fundo do Navbar para uma aparência mais elegante */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores Webkit, como o Safari */
+    position: fixed;
+    width: 100%;
+    z-index: 1; /* Garante que o Navbar esteja acima do vídeo (z-index menor que 0) */
+  } 
+  .MuiSvgIcon-root {
+    color: white !important; /* Define a cor do ícone como branco */
+    margin-left: 10px;
+  }
+.center-text {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+  }
