@@ -2,7 +2,7 @@
   "name": "consultoria",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+
   "homepage": "https://washingtonlimajunior.github.io/consultoria",
   "dependencies": {
     "@emotion/react": "^11.11.1",
