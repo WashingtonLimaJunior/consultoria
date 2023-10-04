@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.backsession {
+  height: 70vh;
+}
+/* Para dispositivos com largura de tela menor que 768 pixels (exemplo: smartphones) */
+@media screen and (max-width: 768px) {
+  .financeiro-container {
+    padding: 20px; /* Reduza o preenchimento para economizar espaço em dispositivos móveis */
+  }
+
+  .video-background,
+  .backsession {
+    height: 55vh; /* Reduza a altura da seção de vídeo para ocupar metade da tela em dispositivos móveis */
+  }
+
+  .green-block-left,
+  .green-block-right {
+    width: 90%; /* Reduza a largura dos blocos verdes para se ajustarem melhor em dispositivos móveis */
+  }
+}
+
+
+
+
+body, html {
+  height: 100%; /* Garante que o corpo e o HTML ocupem 100% da altura da tela */
+  margin: 0;
+  padding: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {	
+  background-color:  rgba(172, 181, 172); /* Tom esverdeado com 50% de opacidade */
+   /* Garante que o contêiner ocupa pelo menos toda a altura da tela */
+  position: relative; /* Permite que elementos filhos se posicionem em relação a este contêiner */
+  z-index: 0;
+}
+.sobre-nos-container-app {
+  height: 100vh;
+  bottom: 24vh;
+  overflow-y: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+  background: linear-gradient(to top, rgba(174, 240, 174, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
+  color: white;
+  backdrop-filter: blur(3px); /* Aplica um desfoque ao fundo do Navbar para uma aparência mais elegante */
+  -webkit-backdrop-filter: blur(10px);
+  
+}
+
+.financeiro-container-app {
+  padding: 25px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  height: 60vh;
+  bottom: 24vh;
+  justify-content: center;
+} 
+.gestaoDeAtivos-container-app {
+  padding: 25px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  height: 60vh;
+  bottom: 10vh;
+  justify-content: center;
+} 
+.iconContatos {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px; /* Ajuste a margem entre as imagens conforme necessário */
+  color: white;
+}
+.linkNavBar { 
+  color: white;
+}
