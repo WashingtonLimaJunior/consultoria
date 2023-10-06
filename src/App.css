@@ -24,6 +24,7 @@
   .green-block-right {
     width: 90%; /* Reduza a largura dos blocos verdes para se ajustarem melhor em dispositivos móveis */
   }
+
 }
 
 
@@ -91,5 +92,7 @@ body, html {
   color: white;
 }
 .footer-app{
-  top:30vh
+  top: 20vh;
+  position: relative;
+
 }

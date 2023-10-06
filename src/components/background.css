@@ -138,7 +138,7 @@
 
     .video-background video {
         min-height: 90vh; /* Define a altura mínima para metade da tela */
-        top: 20%;
+        top: 25%;
 /*        display: none;  Esconde o vídeo padrão para dispositivos móveis */
     }
 

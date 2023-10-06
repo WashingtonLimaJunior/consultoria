@@ -8,6 +8,10 @@
     bottom: 10vh;
     top: 15vh;
   } 
+  .video-container-gestaodeativos iframe {
+    width: 100%;
+    height: 100%;
+}
   .gestaoDeAtivos-container-app::before {
     content: "";
     position: absolute;
@@ -28,7 +32,7 @@
     width: 90%; /* Quando o contêiner pai é passado pelo mouse, a linha aparece completamente */
   }
 
-  .video-container {
+  .video-container-gestaodeativos {
     position: relative;
     top: 10%;
     width: 50%; /* Defina a largura do vídeo como 100% */
@@ -36,13 +40,7 @@
     margin-bottom: 10px;
 
   }
-  
-  .video-container iframe {
-    width: 100%;
-    height: 100%; /* Isso garantirá que o vídeo ocupe 100% da largura e altura do contêiner */
-  }
-  
- 
+
 .icongestaoDeAtivos {
     position: absolute;
     top: 0px; /* Ajuste a distância vertical entre o ícone e o texto conforme necessário */
@@ -67,28 +65,46 @@
 
   }
   @media screen and (max-width: 550px) {
-    .gestaoDeAtivos-container {
-        background-color: white;
-        padding: 40px;
-        z-index: 1;
-        position: relative;
-        display: flex;
-        height: 90vh;
-      }
-      .video-youtube{
-        width: 100vh;
-        height: 50vh;
-    
-      }
-      .video-container {
-        position: relative;
-        top: 10%;
-        width: 125%; /* Defina a largura do vídeo como 100% */
-        padding: 5px;
-        margin-bottom: 10px;
-    
-      }
+    .gestaoDeAtivos-container {   
+      background-color: white;
+      padding: 40px;
+      z-index: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column; /* Empilhar elementos verticalmente */
+      align-items: center; /* Centralizar elementos horizontalmente */
+      height: 90vh;
   }
+    .gestaoDeAtivos-container-app{
+      bottom: 3vh;
+    }
+      
+    .video-container-gestaodeativos iframe {
+      margin: 0;
+      padding: 0;
+      border: none;
+      height: none;
+      width: none;
+    }
+    
+    .video-container-gestaodeativos {
+      position: relative;
+      width: 130%;
+      top: -13%
+  
+  
+    }
+    
+    .text-content {
+      top: 20px;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      left: 5%;
+  }
+
+}
+      
       
  /*  
   .video-container {

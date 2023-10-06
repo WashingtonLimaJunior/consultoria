@@ -1,12 +1,11 @@
 import React from 'react';
 import HandymanIcon from '@mui/icons-material/Handyman';
-
 import './gestaoDeAtivos.css'
 
 
 const gestaoDeAtivos = () => {
   // ID do vídeo do YouTube que você deseja incorporar
-  const videoId = '1WIWrmc-rBk';
+  const videoId = 'LUKQ9AiScMY';
 
   return (
     <div className="gestaoDeAtivos-container">
@@ -21,7 +20,7 @@ const gestaoDeAtivos = () => {
           </p>
         </div>
       </div>
-      <div className="video-container">
+      <div className="video-container-gestaodeativos">
         <iframe
           title="YouTube Video"
           src={`https://www.youtube.com/embed/${videoId}`}
