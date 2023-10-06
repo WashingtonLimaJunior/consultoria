@@ -1,6 +1,5 @@
 import React from 'react';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
-import YouTube from 'react-youtube';
 import './financeiro.css'
 
 

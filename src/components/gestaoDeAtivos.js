@@ -1,6 +1,6 @@
 import React from 'react';
 import HandymanIcon from '@mui/icons-material/Handyman';
-import YouTube from 'react-youtube';
+
 import './gestaoDeAtivos.css'
 
 

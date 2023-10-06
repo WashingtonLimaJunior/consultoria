@@ -2,16 +2,10 @@ import React from 'react';
 import './background.css';
 import Video from '../img/background.mp4';
 import VideoMobile from '../img/video-mobile.mp4';
-import BrandExample from './navbar';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import StorageIcon from '@mui/icons-material/Storage';
 import LanIcon from '@mui/icons-material/Lan';
 import HandymanIcon from '@mui/icons-material/Handyman';
-import Financeiro from './financeiro';
-import LogoGrande from '../img/logo.png';
-
-
-
 
 const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
 const smoothScroll = (targetId) => {
