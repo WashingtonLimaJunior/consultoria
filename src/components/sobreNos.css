@@ -1,0 +1,57 @@
+.sobre-nos-container {
+  height: 50vh;
+  width: 100%;
+  bottom: 2vh;
+  overflow-y: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+    
+  }
+
+
+  
+  .sobre-nos-image {
+    width: 47vh;
+    height: 47vh;
+    right: 62vh;
+    position: relative;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.logosvg {
+    background-image: url("../img/logo.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 20em;
+  }
+  .sobre-nos-text {
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+    width: 60%;
+    height: 80%;
+    transform: translateX(-50%);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    top: 2vh;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+  .sobre-nos-text.show {
+    opacity: 0;
+}
+
+

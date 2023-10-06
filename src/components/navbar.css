@@ -1,0 +1,42 @@
+.transparent-navbar {
+  background-color: black; /* Altera o fundo do Navbar para preto */
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 2px solid green; /* Adiciona uma linha verde na parte inferior do Navbar */
+  z-index: 100;
+}
+.black-navbar {
+  background-color: #333;
+  color: white; /* Define a cor do texto como branco */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  z-index:100;
+  background: linear-gradient(to right, transparent 0%, rgba(0, 114, 0, 0.5) 50%, transparent 100%);
+}
+
+
+.navbar-brand {
+  color: white;
+}
+.text {
+  width: 60vh;
+  display: flex;
+}
+.nome{
+  top: 1vh;
+  position: relative;
+  left: 4vh;
+  font-size: 3vh;
+
+}
+.linksNavBar{
+  color: white;
+  margin-left: 2vh;
+}
+.marca{
+  left: -48px;
+  position: relative;
+}

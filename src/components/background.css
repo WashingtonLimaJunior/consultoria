@@ -1,0 +1,195 @@
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+.overlay {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 128, 0, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    backdrop-filter: blur(10%); /* Aplica um desfoque ao fundo do Navbar para uma aparência mais elegante */
+    -webkit-backdrop-filter: blur(1px); 
+}
+
+.green-block-left {
+    background: linear-gradient(to right, rgba(0, 128, 0, 1), rgba(0, 128, 0, 0));
+    color: white;
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 60%;
+    height: 30vh;
+    z-index: 2;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.green-block-right {
+    color: white;
+    padding: 2%;
+    position: absolute;
+    top: 32%;
+    right: 2%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+    width: 30%;
+    height: 40vh;
+    z-index: 2;
+}
+
+.icon-container {
+    background: linear-gradient(to right, rgba(0, 128, 0, 1), rgba(0, 128, 0, 0));
+    border-radius: 15px;
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-container:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+}
+
+.icon {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.icon-container span {
+    font-size: 1vw;
+}
+
+/* financeiro.css */
+.financeiro-container {
+    background-color: white;
+    padding: 5%;
+    z-index: 1;
+    position: relative;
+}
+
+.financeiro-content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+/*.video-background video {
+    display: block; /* Esconde o vídeo padrão para dispositivos móveis */
+
+
+/*.mobile-video {
+    display: none; /* Esconde o vídeo padrão para dispositivos móveis 
+}*/
+
+
+
+@media screen and (max-width: 550px) {
+    
+    .financeiro-container {
+        display: flex;
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Alinha os itens ao centro */
+        
+    }
+
+    .financeiro-content {
+        max-width: 100%; /* Faça o conteúdo ocupar a largura total em dispositivos móveis */
+    }
+
+    /* Para telas com largura de até 768 pixels (dispositivos móveis) */
+
+    /* .video-background */
+    .video-background {
+        height: 90vh; /* Reduz a altura para ocupar metade da tela */
+        top: 5;
+    }
+
+    .video-background video {
+        min-height: 90vh; /* Define a altura mínima para metade da tela */
+        top: 20%;
+/*        display: none;  Esconde o vídeo padrão para dispositivos móveis */
+    }
+
+    .mobile-video video{
+        min-height: 90vh; /* Define a altura mínima para metade da tela */
+        top: 0;
+    /*    display: block;  Esconde o vídeo padrão para dispositivos móveis */
+    }
+
+    /* .overlay */
+    .overlay {
+        height: 75vh; /* Reduz a altura para ocupar metade da tela */
+    }
+
+    /* .green-block-left */
+    .green-block-left {
+        width: 80%; /* Largura de 80% do contêiner pai */
+        height: 25vh;
+        margin-bottom: 2vh;
+        top: 30%;
+        left: 10%;
+        align-items: center;
+    }
+
+
+    /* .green-block-right */
+    .green-block-right {
+        width: 80%; /* Largura de 80% do contêiner pai */
+        height: 25vh;
+        margin-bottom: 2vh;
+        top: 60%;
+        align-items: center;
+    }
+    /* .icon-container */
+    .icon-container {
+        font-size: 4vw; /* Ajusta o tamanho da fonte em relação à largura da tela */
+        margin-bottom: 2vw; /* Ajusta a margem inferior em relação à largura da tela */
+    }
+
+    .icon-container span {
+        font-size: 2vw; /* Ajusta o tamanho da fonte em relação à largura da tela */
+    }
+
+    /* .financeiro-container */
+    .financeiro-container {
+        padding: 10px; /* Altera o preenchimento para dispositivos móveis */
+    }
+
+    /* .financeiro-content */
+    .financeiro-content {
+        max-width: 100%; /* Faz o conteúdo ocupar 100% da largura da tela */
+    }
+
+    }

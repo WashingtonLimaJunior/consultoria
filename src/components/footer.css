@@ -1,0 +1,16 @@
+.footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: white; /* Cor do texto no footer */
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno no footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    top: 10vh;
+}
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
