@@ -115,7 +115,7 @@
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
     
     .financeiro-container {
         display: flex;
