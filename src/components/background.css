@@ -115,7 +115,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:  768px) {
     
     .financeiro-container {
         display: flex;
@@ -158,7 +158,7 @@
         width: 80%; /* Largura de 80% do contêiner pai */
         height: 25vh;
         margin-bottom: 2vh;
-        top: 30%;
+        top: 25vh;
         left: 10%;
         align-items: center;
     }
@@ -166,11 +166,13 @@
 
     /* .green-block-right */
     .green-block-right {
-        width: 80%; /* Largura de 80% do contêiner pai */
+        width: 80%;
         height: 25vh;
         margin-bottom: 2vh;
-        top: 60%;
+        top: 52vh;
         align-items: center;
+        left: 15%;
+        padding: 0;
     }
     /* .icon-container */
     .icon-container {
